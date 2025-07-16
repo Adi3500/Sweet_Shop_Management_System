@@ -1,0 +1,12 @@
+
+============================= test session starts ==============================
+# 1. test for adding sweet
+
+    tests/test_sweet_shop.py::test_add_sweet FAILED
+    Exception has occurred: ImportError
+    cannot import name 'SweetShop' from 'sweet.Class_logic' (C:\Sweets_Shop\sweet\Class_logic.py)
+    File "C:\Sweets_Shop\sweet\__init__.py", line 1, in <module>
+        from .Class_logic import SweetShop
+     File "C:\Sweets_Shop\tests\test_sweet_shop.py", line 8, in <module>
+        from sweet import SweetShop
+    ImportError: cannot import name 'SweetShop' from 'sweet.Class_logic' (C:\Sweets_Shop\sweet\Class_logic.py)
