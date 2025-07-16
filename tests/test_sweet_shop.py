@@ -9,6 +9,7 @@ from sweet import SweetShop
 import pytest
 
 # Test: Adding a sweet successfully
+
 def test_add_sweet():
     shop = SweetShop()
     shop.add_sweet(1, "Ladoo", "Pastry", 10.0, 20)
@@ -23,6 +24,14 @@ def test_add_missing_fields():
     shop = SweetShop()
     with pytest.raises(ValueError):
         shop.add_sweet(None, "", "Candy", None, None)
+
+# Test: Deleting a sweet by ID
+
+def test_delete_sweet():
+    shop = SweetShop()
+    shop.add_sweet(2, "Barfi", "Candy", 15.0, 5)
+    shop.delete_sweet(2)
+    assert shop.view_sweets() == []
 
 
 
