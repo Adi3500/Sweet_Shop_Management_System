@@ -20,3 +20,13 @@ class SweetShop:
 
         # Return a list of all available sweets.
         return self.sweets
+    
+    def delete_sweet(self, id):
+        
+        #Delete a sweet by its unique ID.
+    
+        for sweet in self.sweets:
+            if sweet["id"] == id:
+                self.sweets.remove(sweet)
+                return
+        raise ValueError("Sweet not found.")
