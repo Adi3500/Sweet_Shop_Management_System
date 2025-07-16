@@ -15,3 +15,14 @@ def test_add_sweet():
     sweets = shop.view_sweets()
     assert len(sweets) == 1
     assert sweets[0]["name"] == "Ladoo"
+
+# Test: Adding a sweet with missing fields
+# Should raise ValueError
+
+def test_add_missing_fields():
+    shop = SweetShop()
+    with pytest.raises(ValueError):
+        shop.add_sweet(None, "", "Candy", None, None)
+
+
+

@@ -10,3 +10,23 @@
      File "C:\Sweets_Shop\tests\test_sweet_shop.py", line 8, in <module>
         from sweet import SweetShop
     ImportError: cannot import name 'SweetShop' from 'sweet.Class_logic' (C:\Sweets_Shop\sweet\Class_logic.py)
+
+#2.  test for adding sweet (second attemp after implimenting the code)
+
+     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 1 item
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [100%]
+
+#3. Test: Adding a sweet with missing fields
+
+    platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 2 items
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 50%]
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [100%]
+ 
