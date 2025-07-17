@@ -1,6 +1,6 @@
 
 
-#1. Test: Adding A sweet
+#1. Test: Adding A sweet (FAILED)
 
     Exception has occurred: ImportError
     cannot import name 'SweetShop' from 'sweet.Class_logic' (C:\Sweets_Shop\sweet\Class_logic.py)
@@ -10,7 +10,7 @@
         from sweet import SweetShop
     ImportError: cannot import name 'SweetShop' from 'sweet.Class_logic' (C:\Sweets_Shop\sweet\Class_logic.py)
 
-#2. Test: Adding A sweet (second attemp after implimenting the code)
+#2. Test: Adding A sweet (second attemp after implimenting the code) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -19,7 +19,7 @@
 
     tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [100%]
 
-#3. Test: Adding a sweet with missing fields
+#3. Test: Adding a sweet with missing fields (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -29,7 +29,7 @@
     tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 50%]
     tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [100%]
 
-#4. Test: Deleting a sweet by ID
+#4. Test: Deleting a sweet by ID (FAILED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -48,7 +48,7 @@
 E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
     tests\test_sweet_shop.py:33: AttributeError
 
-#5. Test: Deleting a sweet by ID (second attemp after implimenting the code)
+#5. Test: Deleting a sweet by ID (second attemp after implimenting the code) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -59,7 +59,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
     tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 66%] 
     tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [100%]
 
-#6. Test: Searching for sweet by name
+#6. Test: Searching for sweet by name (FAILED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -80,7 +80,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
 
     tests\test_sweet_shop.py:41: AttributeError
 
-#7. Test: Searching for sweet by name(second attemp after implimenting the code)
+#7. Test: Searching for sweet by name(second attemp after implimenting the code) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -92,7 +92,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
     tests/test_sweet_shop.py::test_search_by_name PASSED                                                                                          [100%] 
 
-#8. Test: Searching for sweet by category
+#8. Test: Searching for sweet by category (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -104,7 +104,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
     tests/test_sweet_shop.py::test_search_by_category PASSED                                                                                      [100%] 
 
-#9. Test: Searching for sweet by price range
+#9. Test: Searching for sweet by price range (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -116,7 +116,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
     tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [100%] 
 
-#10. Test: Sorting sweets by price (ascending)
+#10. Test: Sorting sweets by price (ascending) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -139,7 +139,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
 
     tests\test_sweet_shop.py:51: AttributeError
 
-#11. Test: Sorting sweets by price (ascending)(second attemp after implementing the code)
+#11. Test: Sorting sweets by price (ascending) (second attemp after implementing the code) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -152,7 +152,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 80%] 
     tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [100%] 
 
-#12. Test: Sorting sweets by name (ascending)
+#12. Test: Sorting sweets by name (ascending) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -166,7 +166,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 83%] 
     tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [100%] 
 
-#13. Test: Sorting sweets by quantity (ascending)
+#13. Test: Sorting sweets by quantity (ascending) (PASSED)
 
     platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
     cachedir: .pytest_cache
@@ -179,5 +179,29 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 66%] 
     tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 83%] 
     tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [100%] 
+
+#14. Test: Purchasing a sweet and reducing quantity (FAILED)
+
+    platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 7 items
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 14%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 28%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 42%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 57%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 71%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [ 85%] 
+    tests/test_sweet_shop.py::test_purchase_sweet FAILED                                                                                          [100%]
+
+    def test_purchase_sweet():
+        shop = SweetShop()
+        shop.add_sweet(6, "Ladoo", "Pastry", 10.0, 10)
+>       shop.purchase_sweet(6, 3)
+        ^^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'SweetShop' object has no attribute 'purchase_sweet'
+
+    tests\test_sweet_shop.py:77: AttributeError
 
 
