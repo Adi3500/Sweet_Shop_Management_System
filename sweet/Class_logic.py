@@ -46,3 +46,12 @@ class SweetShop:
         if max_price is not None:
             results = [s for s in results if s["price"] <= max_price]
         return results
+    
+    def sort_sweets(self, by="price"):
+        
+        #Sort sweets by price, name, or quantity.
+        #Default is by price.
+        
+        if by not in ["price", "name", "quantity"]:
+            raise ValueError("Invalid sort field. Choose price, name, or quantity.")
+        return sorted(self.sweets, key=lambda x: x[by])
