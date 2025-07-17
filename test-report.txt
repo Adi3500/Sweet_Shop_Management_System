@@ -1,5 +1,5 @@
 
-============================= test session starts ==============================
+
 #1. Test: Adding A sweet
 
     Exception has occurred: ImportError
@@ -48,4 +48,16 @@
     E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
     tests\test_sweet_shop.py:33: AttributeError
 
-#5.
+#5. Test: Deleting a sweet by ID (second attemp after implimenting the code)
+
+    platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 3 items
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 33%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 66%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [100%]
+
+#6.  Test: Searching for sweet by name
+ 

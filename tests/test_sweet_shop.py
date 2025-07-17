@@ -33,5 +33,13 @@ def test_delete_sweet():
     shop.delete_sweet(2)
     assert shop.view_sweets() == []
 
+# Test: Searching for sweet by name
+
+def test_search_by_name():
+    shop = SweetShop()
+    shop.add_sweet(3, "Peda", "Pastry", 12.0, 10)
+    results = shop.search_sweets(name="Peda")
+    assert len(results) == 1
+    assert results[0]["category"] == "Pastry"
 
 
