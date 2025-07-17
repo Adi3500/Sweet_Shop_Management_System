@@ -60,4 +60,11 @@ def test_sort_by_name():
     sorted_sweets = shop.sort_sweets(by="name")
     assert sorted_sweets[0]["name"] == "Jalebi"
 
+# Test: Sorting sweets by quantity (ascending)
 
+def test_sort_by_name():
+    shop = SweetShop()
+    shop.add_sweet(5, "Kaju Katli", "Candy", 10.0, 10)
+    shop.add_sweet(4, "Jalebi", "Candy", 20.0, 5)
+    sorted_sweets = shop.sort_sweets(by="quantity")
+    assert sorted_sweets[0]["name"] == "Jalebi"
