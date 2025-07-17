@@ -26,6 +26,8 @@ def main():
         display_menu()
         choice = input("Enter your choice (1-8): ")
 
+        # add sweet
+
         if choice == '1':
             print("\n-- Add Sweet --")
             id = input("Enter sweet id: ")
@@ -48,15 +50,18 @@ def main():
             except ValueError:
                 print("❌ Invalid price or quantity format.")
 
+        # delete byname 
+
         elif choice == '2':
             try:
                 print("\n-- Delete Sweet --")
                 name= input("Enter sweet name to delete: ")
-                
                 shop.delete_sweet(name)
                 print("✅ Sweet deleted.")
             except ValueError:
                 print("❌ Sweet not found.")
+
+        # view sweets
 
         elif choice == '3':
             print("\n-- View Sweets --")
@@ -67,6 +72,8 @@ def main():
                 for s in sweets:
                     print(s)
 
+        # Short sweet by name,category,prce and quantity
+
         elif choice == '4':
             print("\n-- Sort Sweets --")
             by = input("Sort by (name/category/price/quantity): ").lower()
@@ -76,6 +83,8 @@ def main():
                     print(s)
             except KeyError:
                 print("❌ Invalid field to sort by.")
+
+        # Purchase sweet
 
         elif choice == '5':
             try:
@@ -91,6 +100,8 @@ def main():
             except ValueError:
                 print("❌ Not enough stock or sweet not found.")
 
+        # Restock sweet
+
         elif choice == '6':
             try:
                 print("\n-- Restock Sweet --")
@@ -104,6 +115,8 @@ def main():
                 print(f"✅ Restocked {qty} of {name}")
             except ValueError:  
                 print("❌ Sweet not found.")
+
+        # Seacrch sweet
 
         elif choice == '7':
             while True:
