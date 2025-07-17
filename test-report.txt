@@ -43,9 +43,9 @@
     def test_delete_sweet():
         shop = SweetShop()
         shop.add_sweet(2, "Barfi", "Candy", 15.0, 5)
-    >       shop.delete_sweet(2)
+>       shop.delete_sweet(2)
             ^^^^^^^^^^^^^^^^^
-    E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
+E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
     tests\test_sweet_shop.py:33: AttributeError
 
 #5. Test: Deleting a sweet by ID (second attemp after implimenting the code)
@@ -60,4 +60,23 @@
     tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [100%]
 
 #6.  Test: Searching for sweet by name
- 
+
+    platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 4 items
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 25%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 50%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
+    tests/test_sweet_shop.py::test_search_by_name FAILED                                                                                          [100%] 
+
+    def test_search_by_name():
+        shop = SweetShop()
+        shop.add_sweet(3, "Peda", "Pastry", 12.0, 10)
+>       results = shop.search_sweets(name="Peda")
+                  ^^^^^^^^^^^^^^^^^^
+E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
+
+    tests\test_sweet_shop.py:41: AttributeError
+

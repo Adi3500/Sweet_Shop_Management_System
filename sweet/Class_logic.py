@@ -30,3 +30,19 @@ class SweetShop:
                 self.sweets.remove(sweet)
                 return
         raise ValueError("Sweet not found.")
+    
+    def search_sweets(self, name=None, category=None, min_price=None, max_price=None):
+        
+        #Search for sweets using optional filters:
+        #name, category, min_price, max_price.
+        
+        results = self.sweets
+        if name:
+            results = [s for s in results if s["name"].lower() == name.lower()]
+        if category:
+            results = [s for s in results if s["category"].lower() == category.lower()]
+        if min_price is not None:
+            results = [s for s in results if s["price"] >= min_price]
+        if max_price is not None:
+            results = [s for s in results if s["price"] <= max_price]
+        return results

@@ -43,3 +43,4 @@ def test_search_by_name():
     assert results[0]["category"] == "Pastry"
 
 
+
