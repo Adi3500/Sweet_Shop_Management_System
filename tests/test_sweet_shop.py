@@ -33,7 +33,7 @@ def test_delete_sweet():
     shop.delete_sweet(2)
     assert shop.view_sweets() == []
 
-# Test: Searching for sweet by name,category and price range
+# Test: Searching for sweet by name, category and price range
 
 def test_search_by_price_range():
     shop = SweetShop()
@@ -51,5 +51,13 @@ def test_sort_by_price():
     sorted_sweets = shop.sort_sweets(by="price")
     assert sorted_sweets[0]["name"] == "Kaju Katli"
 
+# Test: Sorting sweets by name (ascending)
+
+def test_sort_by_name():
+    shop = SweetShop()
+    shop.add_sweet(5, "Kaju Katli", "Candy", 10.0, 5)
+    shop.add_sweet(4, "Jalebi", "Candy", 20.0, 5)
+    sorted_sweets = shop.sort_sweets(by="name")
+    assert sorted_sweets[0]["name"] == "Jalebi"
 
 
