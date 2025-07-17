@@ -7,7 +7,7 @@ class SweetShop:
     def add_sweet(self, id, name, category, price, quantity):
         
         #Add a new sweet to the shop. All fields are required.
-        
+
         if not id or not name or not category or price is None or quantity is None:
             raise ValueError("Missing required sweet fields.")
 
@@ -74,5 +74,15 @@ class SweetShop:
                 if sweet["quantity"] < quantity:
                     raise ValueError("Not enough stock available.")
                 sweet["quantity"] -= quantity
+                return
+        raise ValueError("Sweet not found.")
+    
+    def restock_sweet(self, id, quantity):
+        
+        #Restock a sweet by increasing its quantity.
+        
+        for sweet in self.sweets:
+            if sweet["id"] == id:
+                sweet["quantity"] += quantity
                 return
         raise ValueError("Sweet not found.")

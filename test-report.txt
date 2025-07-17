@@ -261,4 +261,7 @@ E       AttributeError: 'SweetShop' object has no attribute 'restock_sweet'
 
     tests\test_sweet_shop.py:102: AttributeError
 
+#17. Test: Restocking a sweet (second attemp after implementing the code) (PASSED)
+
+
 
