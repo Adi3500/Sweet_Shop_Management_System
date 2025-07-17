@@ -26,12 +26,12 @@ class SweetShop:
         return self.sweets
     
 
-    def delete_sweet(self, id):
+    def delete_sweet(self, name):
         
         #Delete a sweet by its unique ID.
     
         for sweet in self.sweets:
-            if sweet["id"] == id:
+            if sweet["name"] == name:
                 self.sweets.remove(sweet)
                 return
         raise ValueError("Sweet not found.")
@@ -59,30 +59,30 @@ class SweetShop:
         #Sort sweets by price, name, or quantity.
         #Default is by price.
         
-        if by not in ["price", "name", "quantity"]:
+        if by not in ["price", "name", "quantity","id","category"]:
             raise ValueError("Invalid sort field. Choose price, name, or quantity.")
         return sorted(self.sweets, key=lambda x: x[by])
     
 
-    def purchase_sweet(self, id, quantity):
+    def purchase_sweet(self, name, quantity):
         
         #Purchase a sweet by reducing its quantity.
         #Raises error if sweet not found or not enough stock.
         
         for sweet in self.sweets:
-            if sweet["id"] == id:
+            if sweet["name"] == name:
                 if sweet["quantity"] < quantity:
                     raise ValueError("Not enough stock available.")
                 sweet["quantity"] -= quantity
                 return
         raise ValueError("Sweet not found.")
     
-    def restock_sweet(self, id, quantity):
+    def restock_sweet(self, name, quantity):
         
         #Restock a sweet by increasing its quantity.
         
         for sweet in self.sweets:
-            if sweet["id"] == id:
+            if sweet["name"] == name:
                 sweet["quantity"] += quantity
                 return
         raise ValueError("Sweet not found.")

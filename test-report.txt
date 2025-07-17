@@ -1,4 +1,6 @@
 
+------------------------------------------ Test Report ----------------------------------------------------------------------------------------
+Testing using "Pytest -v"
 
 #1. Test: Adding A sweet (FAILED)
 
@@ -17,7 +19,7 @@
     rootdir: C:\Sweets_Shop
     collected 1 item
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [100%]
 
 #3. Test: Adding a sweet with missing fields (PASSED)
 
@@ -26,8 +28,8 @@
     rootdir: C:\Sweets_Shop
     collected 2 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 50%]
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 50%]
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [100%]
 
 #4. Test: Deleting a sweet by ID (FAILED)
 
@@ -36,9 +38,9 @@
     rootdir: C:\Sweets_Shop
     collected 3 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 33%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 66%] 
-    tests/test_sweet_shop.py::test_delete_sweet FAILED                                                                                            [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 33%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 66%] 
+    tests/test_sweet_shop.py::test_delete_sweet FAILED                                                                                    [100%]
 
     def test_delete_sweet():
         shop = SweetShop()
@@ -55,9 +57,9 @@ E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
     rootdir: C:\Sweets_Shop
     collected 3 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 33%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 66%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 33%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 66%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [100%]
 
 #6. Test: Searching for sweet by name (FAILED)
 
@@ -66,10 +68,10 @@ E       AttributeError: 'SweetShop' object has no attribute 'delete_sweet'
     rootdir: C:\Sweets_Shop
     collected 4 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 25%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 50%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
-    tests/test_sweet_shop.py::test_search_by_name FAILED                                                                                          [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 25%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 50%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 75%] 
+    tests/test_sweet_shop.py::test_search_by_name FAILED                                                                                  [100%] 
 
     def test_search_by_name():
         shop = SweetShop()
@@ -87,10 +89,10 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     rootdir: C:\Sweets_Shop
     collected 4 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 25%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 50%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
-    tests/test_sweet_shop.py::test_search_by_name PASSED                                                                                          [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 25%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 50%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 75%] 
+    tests/test_sweet_shop.py::test_search_by_name PASSED                                                                                  [100%] 
 
 #8. Test: Searching for sweet by category (PASSED)
 
@@ -99,10 +101,10 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     rootdir: C:\Sweets_Shop
     collected 4 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 25%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 50%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
-    tests/test_sweet_shop.py::test_search_by_category PASSED                                                                                      [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 25%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 50%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 75%] 
+    tests/test_sweet_shop.py::test_search_by_category PASSED                                                                              [100%] 
 
 #9. Test: Searching for sweet by price range (PASSED)
 
@@ -111,10 +113,10 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     rootdir: C:\Sweets_Shop
     collected 4 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 25%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 50%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 75%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 25%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 50%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 75%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [100%] 
 
 #10. Test: Sorting sweets by price (ascending) (PASSED)
 
@@ -123,11 +125,11 @@ E       AttributeError: 'SweetShop' object has no attribute 'search_sweets'
     rootdir: C:\Sweets_Shop
     collected 5 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 20%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 40%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 60%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 80%] 
-    tests/test_sweet_shop.py::test_sort_by_price FAILED                                                                                           [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 20%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 40%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 60%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 80%] 
+    tests/test_sweet_shop.py::test_sort_by_price FAILED                                                                                   [100%]
 
     def test_sort_by_price():
         shop = SweetShop()
@@ -146,11 +148,11 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     rootdir: C:\Sweets_Shop
     collected 5 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 20%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 40%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 60%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 80%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 20%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 40%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 60%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 80%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [100%] 
 
 #12. Test: Sorting sweets by name (ascending) (PASSED)
 
@@ -159,12 +161,12 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     rootdir: C:\Sweets_Shop
     collected 6 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 16%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 33%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 50%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 66%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 83%] 
-    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 16%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 33%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 50%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 66%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 83%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [100%] 
 
 #13. Test: Sorting sweets by quantity (ascending) (PASSED)
 
@@ -173,12 +175,12 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     rootdir: C:\Sweets_Shop
     collected 6 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 16%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 33%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 50%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 66%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 83%] 
-    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 16%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 33%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 50%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 66%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 83%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [100%] 
 
 #14. Test: Purchasing a sweet and reducing quantity (FAILED)
 
@@ -187,13 +189,13 @@ E       AttributeError: 'SweetShop' object has no attribute 'sort_sweets'. Did y
     rootdir: C:\Sweets_Shop
     collected 7 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 14%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 28%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 42%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 57%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 71%] 
-    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [ 85%] 
-    tests/test_sweet_shop.py::test_purchase_sweet FAILED                                                                                          [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 14%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 28%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 42%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 57%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 71%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [ 85%] 
+    tests/test_sweet_shop.py::test_purchase_sweet FAILED                                                                                  [100%]
 
     def test_purchase_sweet():
         shop = SweetShop()
@@ -211,13 +213,13 @@ E       AttributeError: 'SweetShop' object has no attribute 'purchase_sweet'
     rootdir: C:\Sweets_Shop
     collected 7 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 14%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 28%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 42%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 57%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 71%] 
-    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [ 85%] 
-    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                          [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 14%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 28%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 42%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 57%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 71%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [ 85%] 
+    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                  [100%]
 
 #16. Test: Trying to purchase more than in stock (PASSED)
 
@@ -226,14 +228,14 @@ E       AttributeError: 'SweetShop' object has no attribute 'purchase_sweet'
     rootdir: C:\Sweets_Shop
     collected 8 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 12%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 25%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 37%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 50%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 62%] 
-    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [ 75%] 
-    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                          [ 87%] 
-    tests/test_sweet_shop.py::test_purchase_insufficient_stock PASSED                                                                             [100%] 
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 12%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 25%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 37%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 50%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 62%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [ 75%] 
+    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                  [ 87%] 
+    tests/test_sweet_shop.py::test_purchase_insufficient_stock PASSED                                                                     [100%] 
 
 #17. Test: Restocking a sweet (FAILED)
 
@@ -242,15 +244,15 @@ E       AttributeError: 'SweetShop' object has no attribute 'purchase_sweet'
     rootdir: C:\Sweets_Shop
     collected 9 items
 
-    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                               [ 11%] 
-    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                      [ 22%] 
-    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                            [ 33%] 
-    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                                   [ 44%] 
-    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                           [ 55%] 
-    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                            [ 66%] 
-    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                          [ 77%] 
-    tests/test_sweet_shop.py::test_purchase_insufficient_stock PASSED                                                                             [ 88%] 
-    tests/test_sweet_shop.py::test_restock_sweet FAILED                                                                                           [100%]
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 11%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 22%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 33%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 44%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 55%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [ 66%] 
+    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                  [ 77%] 
+    tests/test_sweet_shop.py::test_purchase_insufficient_stock PASSED                                                                     [ 88%] 
+    tests/test_sweet_shop.py::test_restock_sweet FAILED                                                                                   [100%]
 
     def test_restock_sweet():
         shop = SweetShop()
@@ -263,5 +265,36 @@ E       AttributeError: 'SweetShop' object has no attribute 'restock_sweet'
 
 #17. Test: Restocking a sweet (second attemp after implementing the code) (PASSED)
 
+    platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 9 items
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                       [ 11%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                              [ 22%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                    [ 33%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                           [ 44%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                   [ 55%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                    [ 66%] 
+    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                  [ 77%]
+    tests/test_sweet_shop.py::test_purchase_insufficient_stock PASSED                                                                     [ 88%] 
+    tests/test_sweet_shop.py::test_restock_sweet PASSED                                                                                   [100%] 
+
+18. Fainal Test
+  
+    platform win32 -- Python 3.13.1, pytest-8.4.1, pluggy-1.6.0 -- C:\Sweets_Shop\venv\Scripts\python.exe
+    cachedir: .pytest_cache
+    rootdir: C:\Sweets_Shop
+    collected 9 items
+
+    tests/test_sweet_shop.py::test_add_sweet PASSED                                                                                           [ 11%] 
+    tests/test_sweet_shop.py::test_add_missing_fields PASSED                                                                                  [ 22%] 
+    tests/test_sweet_shop.py::test_delete_sweet PASSED                                                                                        [ 33%] 
+    tests/test_sweet_shop.py::test_search_by_price_range PASSED                                                                               [ 44%] 
+    tests/test_sweet_shop.py::test_sort_by_price PASSED                                                                                       [ 55%] 
+    tests/test_sweet_shop.py::test_sort_by_name PASSED                                                                                        [ 66%] 
+    tests/test_sweet_shop.py::test_purchase_sweet PASSED                                                                                      [ 77%] 
+    tests/test_sweet_shop.py::test_purchase_insufficient_stock PASSED                                                                         [ 88%] 
+    tests/test_sweet_shop.py::test_restock_sweet PASSED                                                                                       [100%]
 
 

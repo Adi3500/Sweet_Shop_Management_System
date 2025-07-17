@@ -30,7 +30,7 @@ def test_add_missing_fields():
 def test_delete_sweet():
     shop = SweetShop()
     shop.add_sweet(2, "Barfi", "Candy", 15.0, 5)
-    shop.delete_sweet(2)
+    shop.delete_sweet("Barfi")
     assert shop.view_sweets() == []
 
 # Test: Searching for sweet by name, category and price range
@@ -74,7 +74,7 @@ def test_sort_by_name():
 def test_purchase_sweet():
     shop = SweetShop()
     shop.add_sweet(6, "Ladoo", "Pastry", 10.0, 10)
-    shop.purchase_sweet(6, 3)
+    shop.purchase_sweet("Ladoo", 3)
     sweet = shop.view_sweets()[0]
     assert sweet["quantity"] == 7
 
@@ -85,21 +85,15 @@ def test_purchase_insufficient_stock():
     shop = SweetShop()
     shop.add_sweet(7, "Barfi", "Candy", 15.0, 2)
     with pytest.raises(ValueError, match="Not enough stock"):
-        shop.purchase_sweet(7, 5)
+        shop.purchase_sweet("Barfi", 5)
 
-def test_restock_sweet():
-    shop = SweetShop()
-    shop.add_sweet(7, "Barfi", "Candy", 15.0, 5)
-    shop.restock_sweet(7, 10)
-    sweet = shop.view_sweets()[0]
-    assert sweet["quantity"] == 15
 
 # Test: Restocking a sweet
 
 def test_restock_sweet():
     shop = SweetShop()
     shop.add_sweet(8, "Gulab Jamun", "Pastry", 18.0, 5)
-    shop.restock_sweet(8, 10)
+    shop.restock_sweet("Gulab Jamun", 10)
     sweet = shop.view_sweets()[0]
     assert sweet["quantity"] == 15
 
