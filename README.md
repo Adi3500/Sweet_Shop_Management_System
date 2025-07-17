@@ -19,17 +19,20 @@ This is a **console-based Sweet Shop Management System** built with Python. It h
 
 ---
 
-## 🗂️ Folder Structure
+## 🗂️ Project Folder Structure
 
+```
 Sweet_Shop/
-├── main.py # Main menu-driven interface
-├── sweet/
-│ ├── init.py # Package initializer
-│ └── Classes_logics.py # Business logic class (SweetShop)
-├── tests/
-│ └── test_sweet_shop.py # Pytest test cases
-├── test-report.txt # Test report 
-└── README.md # Project documentation
+├── main.py                  # Main menu-driven interface
+├── sweet/                  
+│   ├── __init__.py          # Package initializer
+│   └── Classes_logics.py    # Business logic class (SweetShop)
+├── tests/                  
+│   └── test_sweet_shop.py   # Pytest test cases
+├── test-report.txt          # Pytest output report (optional)
+└── README.md                # Project documentation
+```
+
 
 ---
 
