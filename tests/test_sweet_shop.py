@@ -42,5 +42,14 @@ def test_search_by_price_range():
     assert len(results) == 1
     assert results[0]["name"] == "Peda"
 
+# Test: Sorting sweets by price (ascending)
+
+def test_sort_by_price():
+    shop = SweetShop()
+    shop.add_sweet(4, "Jalebi", "Candy", 20.0, 5)
+    shop.add_sweet(5, "Kaju Katli", "Candy", 10.0, 5)
+    sorted_sweets = shop.sort_sweets(by="price")
+    assert sorted_sweets[0]["name"] == "Kaju Katli"
+
 
 
