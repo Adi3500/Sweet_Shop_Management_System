@@ -35,10 +35,10 @@ def test_delete_sweet():
 
 # Test: Searching for sweet by name,category and price range
 
-def test_search_by_category():
+def test_search_by_price_range():
     shop = SweetShop()
     shop.add_sweet(3, "Peda", "Pastry", 12.0, 10)
-    results = shop.search_sweets(category="Pastry")
+    results = shop.search_sweets(min_price=10 , max_price=15)
     assert len(results) == 1
     assert results[0]["name"] == "Peda"
 
