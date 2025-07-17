@@ -77,4 +77,13 @@ def test_purchase_sweet():
     shop.purchase_sweet(6, 3)
     sweet = shop.view_sweets()[0]
     assert sweet["quantity"] == 7
-    
+
+# Test: Trying to purchase more than in stock
+# Should raise ValueError
+
+def test_purchase_insufficient_stock():
+    shop = SweetShop()
+    shop.add_sweet(7, "Barfi", "Candy", 15.0, 2)
+    with pytest.raises(ValueError, match="Not enough stock"):
+        shop.purchase_sweet(7, 5)
+
